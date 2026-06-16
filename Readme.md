@@ -97,14 +97,6 @@ Add your deployed portfolio URL here:
 https://your-portfolio-url.com
 ```
 
-## 👤 Author
-
-**Suveer Raj Sinha**
-
-- GitHub: https://github.com/Suveer-Raj-Sinha
-- LinkedIn: Add your LinkedIn profile
-- Portfolio: Add your deployed portfolio URL
-
 ## 📄 License
 
 This project is licensed under the MIT License.
