@@ -1,4 +1,4 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import useScrollReveal from '../hooks/useScrollReveal';
 import projectsData from '../data/projects';
 
@@ -29,41 +29,70 @@ const Projects = () => {
               "
             >
               {/* Image */}
-              <div className="w-full aspect-[16/10]">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+              <div className="w-full h-44 bg-dark-900/60 flex items-center justify-center overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  className={`w-full h-full ${project.imageFit === 'contain' ? 'object-contain' : 'object-cover object-top'}`}
+                />
               </div>
 
               {/* Content */}
-              <div className="p-6 flex flex-col grow text-left">
-                <h3 className="font-heading text-[1.4rem] text-text-primary mb-4">
+              <div className="p-5 flex flex-col grow text-left">
+                <h3 className="font-heading text-[1.2rem] leading-snug text-text-primary mb-3">
                   {project.title}
                 </h3>
-                <p className="font-body text-text-secondary leading-relaxed grow mb-5">
+                <p className="font-body text-sm text-text-secondary leading-relaxed grow mb-4 line-clamp-4">
                   {project.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2.5 mb-5">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="bg-brand/15 text-brand px-3 py-1 rounded-full text-xs font-medium"
+                      className="bg-brand/15 text-brand px-2.5 py-1 rounded-full text-xs font-medium"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                {/* GitHub Link */}
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 text-text-primary no-underline font-medium transition-colors duration-300 hover:text-brand"
-                >
-                  <FaGithub className="text-2xl" />
-                  <span>View on GitHub</span>
-                </a>
+                {/* Links */}
+                <div className={`grid gap-3 ${project.liveUrl ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      inline-flex items-center justify-center gap-2 text-text-primary no-underline
+                      font-medium text-sm px-4 py-2.5 rounded-lg border border-white/15
+                      transition-all duration-300
+                      hover:border-brand/50 hover:text-brand hover:bg-brand/5
+                    "
+                  >
+                    <FaGithub className="text-lg" />
+                    <span>Code</span>
+                  </a>
+
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="
+                        inline-flex items-center justify-center gap-2 text-dark-900 no-underline
+                        font-medium text-sm px-4 py-2.5 rounded-lg bg-brand
+                        transition-all duration-300
+                        hover:bg-brand-light
+                      "
+                    >
+                      <FaExternalLinkAlt className="text-sm" />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

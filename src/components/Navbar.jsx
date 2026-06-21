@@ -95,7 +95,7 @@ const Navbar = () => {
           {/* Resume button */}
           <li className="max-[960px]:w-full max-[960px]:p-6 max-[960px]:flex max-[960px]:justify-center">
             <a
-              href="/resume.pdf"
+              href="/suveer's_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMobileMenu}

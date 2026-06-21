@@ -37,11 +37,11 @@ const About = () => {
           {/* Bio & Skills */}
           <div className="basis-[70%] max-[820px]:text-left">
             <h3 className="font-heading text-[1.8rem] text-text-primary mb-5 max-[820px]:text-center">
-              Full-Stack Developer &amp; Mobile Enthusiast
+              Full-Stack Developer &amp; Creative Engineer
             </h3>
 
             <p className="font-body text-lg leading-[1.7] text-text-secondary mb-10">
-              I am a Full-Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) with hands-on experience in building responsive and scalable web applications. I am skilled in creating modern user interfaces with React and integrating back-end APIs with Node.js and Express. Additionally, I am proficient in using Firebase for authentication and real-time databases and have a strong passion for cross-platform mobile development with Flutter.
+              I'm a Full-Stack Developer who builds real-time web applications, geospatial dashboards, browser extensions, and interactive 3D experiences. My recent work spans aggregating live hazard data into an interactive disaster-monitoring platform, engineering an immersive 3D solar system explorer with custom GLSL shaders, and building an AI-powered visual search extension backed by FastAPI. I care about scalable, data-driven architecture as much as I care about how an interface feels to use.
             </p>
 
             {/* Skills Grid */}
@@ -49,15 +49,15 @@ const About = () => {
               {[
                 {
                   title: 'Frontend Development',
-                  items: ['React.js', 'JavaScript (ES6+)', 'HTML5 & CSS3', 'Tailwind CSS'],
+                  items: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'Three.js & React Three Fiber', 'Tailwind CSS'],
                 },
                 {
-                  title: 'Backend & Databases',
-                  items: ['Node.js', 'MongoDB', 'Firebase & Firestore', 'REST APIs', 'SQLite'],
+                  title: 'Backend & Data',
+                  items: ['Node.js & Express.js', 'Python & FastAPI', 'MongoDB', 'Firebase & Firestore', 'SQLite', 'REST APIs'],
                 },
                 {
                   title: 'Mobile & Additional',
-                  items: ['Flutter & Dart', 'Kotlin & Java', 'Git & GitHub', 'Version Control'],
+                  items: ['Flutter & Dart', 'Kotlin & Java', 'GLSL Shaders', 'Chrome Extension APIs', 'Git & GitHub'],
                 },
               ].map((cat) => (
                 <div key={cat.title}>

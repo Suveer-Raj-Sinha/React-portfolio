@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
 const TITLES_TO_CYCLE = [
-  "MERN Stack Developer",
-  "Flutter Developer",
-  "Full-Stack Engineer",
-  "Mobile App Developer",
+  "Full-Stack Developer",
+  "React & TypeScript Engineer",
+  "3D Web Developer",
+  "FastAPI Backend Developer",
 ];
 
 const Hero = () => {
@@ -55,7 +55,7 @@ const Hero = () => {
 
       {/* Summary */}
       <p className="font-body text-lg font-light text-text-secondary leading-relaxed max-w-[650px] mx-auto mb-10 max-md:text-base">
-        Specializing in building responsive and scalable web applications with the MERN stack and creating cross-platform mobile apps with Flutter.
+        Building real-time web applications, geospatial dashboards, and interactive 3D experiences with React, TypeScript, and FastAPI — with a strong focus on performance and visual design.
       </p>
 
       {/* CTA Buttons */}
