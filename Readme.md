@@ -56,7 +56,7 @@ public/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/react-portfolio.git
+git clone https://github.com/Suveer-Raj-Sinha/react-portfolio.git
 ```
 
 Navigate to the project directory:
