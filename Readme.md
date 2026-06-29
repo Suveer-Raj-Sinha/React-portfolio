@@ -92,10 +92,7 @@ npm run preview
 ## 🌐 Live Demo
 
 Add your deployed portfolio URL here:
-
-```text
-https://your-portfolio-url.com
-```
+https://suveer-raj-sinha.vercel.app/
 
 ## 📄 License
 
